@@ -144,3 +144,69 @@
 ### Task seven output
 
 ![Task seven](./images/task-seven-output.png)
+
+8. Webiste Name: [Google](https://www.google.com/)
+
+### Topics
+
+    Remove Elements
+
+### Sample Image
+
+![Sample One](./Pic14.png)
+
+### Tasks
+
+    Remove alternate languages from the home page languages listed
+
+### Task eigth code
+
+![Task eigth](./images/task-eight-code.png)
+
+### Task eigth output
+
+![Task eigth](./images/task-eight-output.png)
+
+9. Webiste Name: [Code Wars](https://www.codewars.com/)
+
+### Topics
+
+       Change Font Family, Color of Text.
+
+### Sample Image
+
+![Sample One](./Pic16.png)
+
+### Tasks
+
+    Change the font family of the text to monospace and text color to the logo’s background color.
+
+### Task nine code
+
+![Task nine](./images/task-nine-code.png)
+
+### Task nine output
+
+![Task nine](./images/task-nine-output.png)
+
+10. Webiste Name: [Freecodecamp](https://www.freecodecamp.org/)
+
+### Topics
+
+       querySelector, mouseover, click eventListener,  callback function, style,
+
+### Sample Image
+
+![Sample One](./Pic18.png)
+
+### Tasks
+
+    Target the button and change background colour on mouseover
+
+### Task ten code
+
+![Task ten](./images/task-ten-code.png)
+
+### Task ten output
+
+![Task ten](./images/task-ten-output.png)
