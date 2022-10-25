@@ -1,0 +1,251 @@
+/* Small Screen */
+@media (min-width: 640px) {
+    .container {
+        max-width: 640px;
+    }
+
+    .sm\:w-1\/2 {
+        width: 50%
+    }
+
+    .sm\:w-1\/4 {
+        width: 25%
+    }
+
+    /* margin */
+    .sm\:mt-0 {
+        margin-top: 0px;
+    }
+
+    .sm\:mb-0 {
+        margin-bottom: 0px;
+    }
+
+    .sm\:ml-auto {
+        margin-left: auto;
+    }
+
+    /* padding */
+    .sm\:pl-8 {
+        padding-left: 2rem;
+    }
+
+    /* flex */
+    .sm\:flex-row {
+        flex-direction: row;
+    }
+
+    .sm\:justify-start {
+        justify-content: flex-start;
+    }
+
+    .sm\:inline-block {
+        display: inline-block;
+    }
+
+    /* text */
+    .sm\:text-left {
+        text-align: left;
+    }
+
+    .sm\:text-3xl {
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+    }
+
+    .sm\:text-4xl {
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+    }
+}
+
+/* Mediumn Screen */
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .md\:h-36 {
+        height: 9rem;
+    }
+
+    /* width */
+    .md\:w-1\/2 {
+        width: 50%;
+    }
+    .md\:w-1\/3 {
+        width: 33.333333%;
+    }
+    .md\:w-2\/3 {
+        width: 66.666667%;
+    }
+    .md\:w-1\/4 {
+        width: 25%;
+    }
+
+    /* Margin */
+    .md\:mx-0 {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .md\:mt-0 {
+        margin-top: 0px;
+    }
+
+    .md\:ml-auto {
+        margin-left: auto;
+    }
+
+    .md\:mb-0 {
+        margin-bottom: 0px;
+    }
+
+    /* Padding */
+    .md\:pr-16 {
+        padding-right: 4rem;
+    }
+
+    .md\:pr-20 {
+        padding-right: 5rem;
+    }
+
+    /* text */
+    .md\:text-left {
+        text-align: left;
+    }
+
+    /* flexbox */
+    .md\:flex {
+        display: flex;
+    }
+    .md\:inline-flex {
+        display: inline-flex;
+    }
+    .md\:flex-row {
+        flex-direction: row;
+    }
+
+    .md\:flex-nowrap {
+        flex-wrap: nowrap;
+    }
+
+    .md\:items-start {
+        align-items: flex-start;
+    }
+
+    .md\:items-center {
+        align-items: center;
+    }
+
+    .md\:justify-start {
+        justify-content: flex-start;
+    }
+
+    .md\:inline-block {
+        display: inline-block;
+    }
+    .md\:hidden {
+        display: none;
+    }
+
+}
+
+/* Large Screen */
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
+    }
+
+    .lg\:h-48 {
+        height: 12rem;
+    }
+
+    /* width */
+    .lg\:w-full {
+        width: 100%;
+    }
+
+    .lg\:w-2\/3 {
+        width: 66.666667%;
+    }
+
+    .lg\:w-1\/2 {
+        width: 50%;
+    }
+
+    .lg\:w-1\/4 {
+        width: 25%;
+    }
+
+    .lg\:w-1\/5 {
+        width: 20%;
+    }
+
+    .lg\:w-1\/3 {
+        width: 33.3333333%;
+    }
+
+    .lg\:max-w-lg {
+        max-width: 32rem;
+    }
+
+    .lg\:text-5xl {
+        font-size: 3rem;
+        line-height: 1;
+    }
+
+    /* margin */
+    .lg\:mb-0 {
+        margin-bottom: 0px;
+    }
+
+    /* Padding */
+    .lg\:pl-24 {
+        padding-left: 6rem;
+    }
+
+    .lg\:pr-24 {
+        padding-right: 6rem;
+    }
+
+    /* flex */
+    .lg\:items-start {
+        align-items: flex-start;
+    }
+
+    .lg\:flex-grow {
+        flex-grow: 1;
+    }
+
+    .lg\:inline-block {
+        display: inline-block;
+    }
+}
+
+/* Extra Large Screen */
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+    }
+
+    /* width */
+    .xl\:w-1\/4 {
+        width: 25%;
+    }
+
+    .xl\:w-1\/3 {
+        width: 33.333333%;
+    }
+}
+
+/* Extra Extra Large Screen */
+@media (min-width: 1536px) {
+    .container {
+        max-width: 1536px;
+    }
+}
+
+/* Desktop Screen size */
+/* Small (smaller than 640px) Medium (641px to 1007px) Large (1008px and larger) */
+/* 320px for mobile */
