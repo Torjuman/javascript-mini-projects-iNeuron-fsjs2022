@@ -793,6 +793,10 @@
     list-style-type: none;
 }
 
+.cursor-pointer {
+    cursor: pointer;
+}
+
 .cards:hover {
     --tw-bg-opacity: 1;
     background-color: rgba(112, 48, 204, var(--tw-bg-opacity));
