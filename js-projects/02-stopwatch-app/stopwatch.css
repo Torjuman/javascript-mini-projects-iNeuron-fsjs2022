@@ -1,0 +1,56 @@
+.h-v-full {
+    height: 100vh;
+}
+
+.w-200px {
+    width: 250px;
+}
+.w-100px {
+    width: 100px;
+}
+.h-200px {
+    height: 250px;
+}
+
+/* Background colour */
+.bg-orange-200 {
+    background-color: rgb(254 215 170);
+}
+.bg-orange-400 {
+    background-color: rgb(251 146 60);
+}
+.bg-orange-600 {
+    background-color: rgb(234 88 12);
+}
+
+.shadow-orange-34 {
+    box-shadow: 0 0 34px -15px rgb(234 88 12);
+}
+.shadow-orange-4 {
+    box-shadow: 0 0 4px rgb(251 146 60);
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.gap-4 {
+    gap: 1rem;
+}
+
+.hover\:start:hover {
+    box-shadow: 0 0 4px rgb(22 163 74);
+    color: rgb(22 163 74);
+}
+.hover\:stop:hover {
+    box-shadow: 0 0 4px rgb(255 51 67);
+    color: rgb(255 51 67);
+}
+.hover\:reset:hover {
+    box-shadow: 0 0 4px rgb(234 88 12);
+    color: rgb(234 88 12);
+}
+.hover\:watch:hover {
+    box-shadow: 0 0 4px rgb(234 88 12);
+    color: rgb(234 88 12);
+}

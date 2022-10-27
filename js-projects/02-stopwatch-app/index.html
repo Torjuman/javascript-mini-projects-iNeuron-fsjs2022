@@ -4,19 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="./stopwatch.css">
     <title>Stopwatch App</title>
 </head>
-<body>
-    <div class="">
-        <div class="">
+<body class="text-gray-600 bg-orange-200">
+    <div class="container mx-auto h-v-full flex flex-col items-center justify-center">
+        <div class="bg-orange-200 hover:watch tracking-widest cursor-pointer flex justify-center items-center w-200px h-200px text-5xl rounded-full shadow-orange-34">
             <span id="hours">00</span> :
             <span id="minutes">00</span> :
             <span id="seconds">00</span>
         </div>
-        <div class="">
-            <button id="start">Start</button>
-            <button id="stop">Stop</button>
-            <button id="reset">Reset</button>
+        <div class="flex flex-row gap-4 mt-5">
+            <button class="inline-flex w-100px py-2 font-medium bg-orange-200 rounded-lg shadow-orange-4 justify-center hover:start" id="start">Start</button>
+            <button class="inline-flex w-100px py-2 font-medium bg-orange-200 rounded-lg shadow-orange-4 justify-center hover:stop" id="stop">Stop</button>
+            <button class="inline-flex w-100px py-2 font-medium bg-orange-200 rounded-lg shadow-orange-4 justify-center hover:reset" id="reset">Reset</button>
         </div>
     </div>
     <script src="./app.js"></script>
