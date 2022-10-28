@@ -1,0 +1,33 @@
+.h-v-70 {
+    height: 70vh;
+}
+
+.w-100px {
+    width: 100px;
+}
+
+.h-40px {
+    height: 40px;
+}
+
+.text-indigo-600 {
+    color: rgb(79 70 229);
+}
+
+/* Background colour */
+.bg-indigo-200 {
+    background-color: rgb(199 210 254);
+}
+
+.shadow-indigo-34 {
+    box-shadow: 0 0 34px -15px rgb(79 70 229);
+}
+
+.shadow-indigo-4 {
+    box-shadow: 0 0 4px rgb(129 140 248);
+}
+
+.hover\:stop:hover {
+    box-shadow: 0 0 4px rgb(255 51 67);
+    color: rgb(255 51 67);
+}
