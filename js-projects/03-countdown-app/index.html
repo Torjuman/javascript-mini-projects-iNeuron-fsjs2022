@@ -4,20 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="./countdown.css">
     <title>Countdown App</title>
 </head>
-<body>
-    <div class="">
-        <h1>Countdown App</h1>
-        <div class="">
-            <button id="increase">Increase</button>
-            <span id="seconds">00</span>
-            <button id="decrease">Decrease</button>
+<body class="text-cyan-600 bg-cyan-200">
+    <div class="p-4 flex flex-row">
+        <a href="../../index.html">
+            <img src="../images/house-solid.svg" alt="home" class="w-6 h-6 mr-2 cursor-pointer">
+        </a>
+        <a href="https://github.com/Torjuman/javascript-mini-projects-iNeuron-fsjs2022/tree/main/js-projects/03-countdown-app"
+            target="_blank" rel="noopener noreferrer">
+            <img src="../images/github.svg" alt="github" class="w-6 h-6 ml-2 cursor-pointer">
+        </a>
+    </div>
+    <h1 class="text-5xl font-medium text-center">Countdown App</h1>
+    <div class="container mx-auto h-v-80 flex flex-col items-center justify-center">
+        <div class="flex flex-row items-center">
+            <button class="inline-flex w-100px h-40px mr-2 py-2 font-medium bg-cyan-200 rounded-lg shadow-cyan-4 justify-center hover:start" id="increase">Increase</button>
+            <div class="bg-cyan-200 hover:watch cursor-pointer flex justify-center items-center w-200px h-200px text-5xl rounded-full shadow-cyan-34">
+                <span id="seconds">00</span>
+            </div>
+            <button class="inline-flex w-100px h-40px ml-2 py-2 font-medium bg-cyan-200 rounded-lg shadow-cyan-4 justify-center hover:start" id="decrease">Decrease</button>
         </div>
-        <div class="">
-            <button id="start" >Start</button>
-            <button id="stop" >Stop</button>
-            <button id="reset" >Reset</button>
+        <div class="flex flex-row gap-4 mt-5">
+            <button class="inline-flex w-100px py-2 font-medium bg-cyan-200 rounded-lg shadow-cyan-4 justify-center hover:start" id="start" >Start</button>
+            <button class="inline-flex w-100px py-2 font-medium bg-cyan-200 rounded-lg shadow-cyan-4 justify-center hover:stop" id="stop" >Stop</button>
+            <button class="inline-flex w-100px py-2 font-medium bg-cyan-200 rounded-lg shadow-cyan-4 justify-center hover:reset" id="reset" >Reset</button>
         </div>
     </div>
     <script src="./app.js"></script>

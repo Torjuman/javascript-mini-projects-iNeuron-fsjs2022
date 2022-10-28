@@ -1,0 +1,58 @@
+.h-v-80 {
+    height: 80vh;
+}
+
+.w-200px {
+    width: 250px;
+}
+
+.w-100px {
+    width: 100px;
+}
+
+.h-40px {
+    height: 40px;
+}
+.h-200px {
+    height: 250px;
+}
+
+.text-cyan-600 {
+    color: rgb(8 145 178);
+}
+/* Background colour */
+.bg-cyan-200 {
+    background-color: rgb(165 243 252);
+}
+
+.shadow-cyan-34 {
+    box-shadow: 0 0 34px -15px rgb(8 145 178);
+}
+
+.shadow-cyan-4 {
+    box-shadow: 0 0 4px rgb(34 211 238);
+}
+
+.gap-4 {
+    gap: 1rem;
+}
+
+.hover\:start:hover {
+    box-shadow: 0 0 4px rgb(22 163 74);
+    color: rgb(22 163 74);
+}
+
+.hover\:stop:hover {
+    box-shadow: 0 0 4px rgb(255 51 67);
+    color: rgb(255 51 67);
+}
+
+.hover\:reset:hover {
+    box-shadow: 0 0 4px rgb(234 88 12);
+    color: rgb(234 88 12);
+}
+
+.hover\:watch:hover {
+    box-shadow: 0 0 4px rgb(34 211 238);
+    color: rgb(34 211 238);
+}
