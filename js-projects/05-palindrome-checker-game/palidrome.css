@@ -1,0 +1,53 @@
+.h-v-60 {
+    height: 60vh;
+}
+
+.w-100px {
+    width: 100px;
+}
+
+.h-40px {
+    height: 40px;
+}
+
+.text-rose-600 {
+    color: rgb(225 29 72);
+}
+
+.text-blue-600 {
+    color: rgb(37 99 235);
+}
+
+/* Background colour */
+.bg-rose-200 {
+    background-color: rgb(254 205 211);
+}
+
+.shadow-rose-34 {
+    box-shadow: 0 0 15px -2px rgb(225 29 72);
+}
+
+.shadow-rose-4 {
+    box-shadow: 0 0 4px rgb(251 113 133);
+}
+
+.hover\:stop:hover {
+    box-shadow: 0 0 4px rgb(255 51 67);
+    color: rgb(255 51 67);
+}
+
+.max-w-320px {
+    max-width: 320px;
+}
+
+@media (min-width: 500px) {
+    .max-w-320px {
+        max-width:480px;
+    }
+}
+
+@media (min-width: 768px) {
+    .max-w-320px {
+        max-width: 640px;
+    }
+}
