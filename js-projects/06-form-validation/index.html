@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Form Validation</title>
+</head>
+<body>
+    <h1>Complete Form Validation</h1>
+    <div class="">
+        <form action="">
+            <div class="">
+                <input type="text" id="user-name" value="" placeholder="Enter username">
+                <div class="" id="user-name-error"></div>
+            </div>
+            <div class="">
+                <input type="email" id="user-email" value="" placeholder="Enter Email">
+                <div class="" id="user-email-error"></div>
+            </div>
+            <div class="">
+                <input type="password" id="user-password" value="" placeholder="Enter password">
+            </div>
+            <div class="">
+                <input type="password" id="user-confirm-password" value="" placeholder="Confirm password">
+                <div class="" id="user-confirm-password-error"></div>
+            </div>
+            <input disabled type="submit" id="submit-btn">
+        </form>
+        <div class="">
+            <div class="" > <div class="" id="user-password-char-error"><span class="hidden">+</span><span class="inline-flex">-</span></div> <span>Use charecter within a-z</span></div>
+            <div class="" > <div class="" id="user-password-num-error"><span class="hidden">+</span><span class="inline-flex">-</span></div> <span>Use number within 0-9</span></div>
+            <div class="" > <div class="" id="user-password-special-error"><span class="hidden">+</span><span class="inline-flex">-</span></div> <span>Use "!@#$%&*?" one of them </span></div>
+            <div class="" > Password must have 6 or more charecters</div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
