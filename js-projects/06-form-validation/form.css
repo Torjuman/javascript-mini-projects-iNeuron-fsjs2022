@@ -1,0 +1,44 @@
+.h-v-full {
+    height: 100vh;
+}
+
+.w-100px {
+    width: 100px;
+}
+
+.h-40px {
+    height: 40px;
+}
+
+.text-teal-600 {
+    color: rgb(13 148 136);
+}
+
+/* Background colour */
+.bg-teal-200 {
+    background-color: rgb(153 246 228);
+}
+
+.bg-teal-600 {
+    background-color: rgb(13 148 136);
+}
+
+.shadow-teal-34 {
+    box-shadow: 0 0 15px -2px rgb(13 148 136);
+}
+
+.shadow-teal-4 {
+    box-shadow: 0 0 4px rgb(45 212 191);
+}
+
+.hover\:submit:hover {
+    background-color: rgb(153 246 228);
+    box-shadow: 0 0 4px rgb(13 148 136);
+    color: rgb(13 148 136);
+}
+
+.disabled\:opacity-75:disabled {
+    background-color: rgb(255 51 67);
+    color: rgb(255, 255, 255);
+    opacity: 0.75;
+}

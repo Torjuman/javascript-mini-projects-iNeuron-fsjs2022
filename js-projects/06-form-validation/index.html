@@ -1,39 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/favicon.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="stylesheet" href="./form.css" />
     <title>Complete Form Validation</title>
-</head>
-<body>
-    <h1>Complete Form Validation</h1>
-    <div class="">
-        <form action="">
-            <div class="">
-                <input type="text" id="user-name" value="" placeholder="Enter username">
-                <div class="" id="user-name-error"></div>
-            </div>
-            <div class="">
-                <input type="email" id="user-email" value="" placeholder="Enter Email">
-                <div class="" id="user-email-error"></div>
-            </div>
-            <div class="">
-                <input type="password" id="user-password" value="" placeholder="Enter password">
-            </div>
-            <div class="">
-                <input type="password" id="user-confirm-password" value="" placeholder="Confirm password">
-                <div class="" id="user-confirm-password-error"></div>
-            </div>
-            <input disabled type="submit" id="submit-btn">
-        </form>
+  </head>
+  <body class="text-teal-600 bg-teal-200">
+    <div class="p-4 flex flex-row">
+      <a href="../../index.html">
+        <img
+          src="../images/house-solid.svg"
+          alt="home"
+          class="w-6 h-6 mr-2 object-cover object-center cursor-pointer"
+        />
+      </a>
+      <a
+        href="https://github.com/Torjuman/javascript-mini-projects-iNeuron-fsjs2022/tree/main/js-projects/06-form-validation"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="../images/github.svg"
+          alt="github"
+          class="w-6 h-6 ml-2 object-cover object-center cursor-pointer"
+        />
+      </a>
+    </div>
+    <h1 class="text-5xl font-medium text-center">Complete Form Validation</h1>
+    <div
+      class="container mx-auto h-v-full flex flex-col items-center justify-center"
+    >
+      <form action="" class="bg-teal-200 p-5 rounded shadow-teal-34 mb-2">
+        <h1 class="text-2xl font-medium text-center mt-3 mb-3">Sign Up Form</h1>
         <div class="">
-            <div class="" > <div class="" id="user-password-char-error"><span class="hidden">+</span><span class="inline-flex">-</span></div> <span>Use charecter within a-z</span></div>
-            <div class="" > <div class="" id="user-password-num-error"><span class="hidden">+</span><span class="inline-flex">-</span></div> <span>Use number within 0-9</span></div>
-            <div class="" > <div class="" id="user-password-special-error"><span class="hidden">+</span><span class="inline-flex">-</span></div> <span>Use "!@#$%&*?" one of them </span></div>
-            <div class="" > Password must have 6 or more charecters</div>
+          <input
+            class="p-2 rounded mt-2"
+            type="text"
+            id="user-name"
+            value=""
+            placeholder="Enter username"
+          />
+          <div class="h-6 text-tomato-600" id="user-name-error"></div>
         </div>
+        <div class="">
+          <input
+            class="p-2 rounded mt-2"
+            type="email"
+            id="user-email"
+            value=""
+            placeholder="Enter Email"
+          />
+          <div class="h-6 text-tomato-600" id="user-email-error"></div>
+        </div>
+        <div class="">
+          <input
+            class="p-2 rounded mt-2"
+            type="password"
+            id="user-password"
+            value=""
+            placeholder="Enter password"
+          />
+          <div class="h-6"></div>
+        </div>
+        <div class="">
+          <input
+            class="p-2 rounded mt-2"
+            type="password"
+            id="user-confirm-password"
+            value=""
+            placeholder="Confirm password"
+          />
+          <div
+            class="h-6 text-tomato-600"
+            id="user-confirm-password-error"
+          ></div>
+        </div>
+        <input
+          disabled
+          type="submit"
+          id="submit-btn"
+          class="disabled:opacity-75 text-white flex w-100px py-2 mt-2 font-medium bg-teal-600 rounded-lg shadow-teal-4 justify-center hover:submit"
+        />
+      </form>
+      <div class="flex flex-col mt-2 bg-teal-200 p-5 rounded shadow-teal-34">
+        <div class="flex flex-row">
+          <div class="" id="user-password-char-error">
+            <span class="hidden"
+              ><img
+                src="./images/circle-check-solid.svg"
+                alt="circle-check-solid"
+                class="w-5 mr-2 object-center object-cover" /></span
+            ><span class="inline-flex"
+              ><img
+                src="./images/circle-xmark-solid.svg"
+                alt="circle-xmark-solid"
+                class="w-5 mr-2 object-center object-cover"
+            /></span>
+          </div>
+          <span
+            >Use charecter within <span class="text-tomato-600">a-z</span></span
+          >
+        </div>
+        <div class="flex flex-row">
+          <div class="" id="user-password-num-error">
+            <span class="hidden"
+              ><img
+                src="./images/circle-check-solid.svg"
+                alt="circle-check-solid"
+                class="w-5 mr-2 object-center object-cover" /></span
+            ><span class="inline-flex"
+              ><img
+                src="./images/circle-xmark-solid.svg"
+                alt="circle-xmark-solid"
+                class="w-5 mr-2 object-center object-cover"
+            /></span>
+          </div>
+          <span
+            >Use number within <span class="text-tomato-600">0-9</span></span
+          >
+        </div>
+        <div class="flex flex-row">
+          <div class="" id="user-password-special-error">
+            <span class="hidden"
+              ><img
+                src="./images/circle-check-solid.svg"
+                alt="circle-check-solid"
+                class="w-5 mr-2 object-center object-cover" /></span
+            ><span class="inline-flex"
+              ><img
+                src="./images/circle-xmark-solid.svg"
+                alt="circle-xmark-solid"
+                class="w-5 mr-2 object-center object-cover"
+            /></span>
+          </div>
+          <span
+            >Use "<span class="text-tomato-600">!@#$%&*?</span>" one of them
+          </span>
+        </div>
+        <div class="flex flex-row">
+          <div class="" id="user-password-six-error">
+            <span class="hidden"
+              ><img
+                src="./images/circle-check-solid.svg"
+                alt="circle-check-solid"
+                class="w-5 mr-2 object-center object-cover" /></span
+            ><span class="inline-flex"
+              ><img
+                src="./images/circle-xmark-solid.svg"
+                alt="circle-xmark-solid"
+                class="w-5 mr-2 object-center object-cover"
+            /></span>
+          </div>
+          <span>
+            Password must have
+            <span class="text-tomato-600">6 or more </span> charecters
+          </span>
+        </div>
+      </div>
     </div>
     <script src="./app.js"></script>
-</body>
+  </body>
 </html>
