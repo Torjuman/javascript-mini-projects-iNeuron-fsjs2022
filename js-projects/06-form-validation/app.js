@@ -24,14 +24,17 @@ function main() {
         let charCheck = /[A-Za-z]/g.test(passValue);
         let numCheck = /[0-9]/g.test(passValue);
         let specialCharCheck = /[!@#$%&*?]/g.test(passValue);
+        let lengthCheck = passValue.length > 5;
         
         let one = document.getElementById("user-password-char-error");
         let two = document.getElementById("user-password-num-error");
         let three = document.getElementById("user-password-special-error");
+        let four = document.getElementById("user-password-six-error");
         addRemoveClass(one, charCheck);
         addRemoveClass(two, numCheck);
         addRemoveClass(three, specialCharCheck);
-        if(charCheck && numCheck && specialCharCheck && passValue.length > 5) {
+        addRemoveClass(four, lengthCheck)
+        if(charCheck && numCheck && specialCharCheck && lengthCheck) {
             submitBtn.disabled = false
         } else {
             submitBtn.disabled = true
@@ -77,15 +80,15 @@ function main() {
     // Uitil
     function addRemoveClass(divChild, logic) {
         if(logic) {
-            divChild.childNodes[0].classList.remove("hidden")
-            divChild.childNodes[0].classList.add("inline-flex")
-            divChild.childNodes[1].classList.remove("inline-flex")
-            divChild.childNodes[1].classList.add("hidden")
+            divChild.children[0].classList.remove("hidden")
+            divChild.children[0].classList.add("inline-flex")
+            divChild.children[1].classList.remove("inline-flex")
+            divChild.children[1].classList.add("hidden")
         } else {
-            divChild.childNodes[0].classList.remove("inline-flex")
-            divChild.childNodes[0].classList.add("hidden")
-            divChild.childNodes[1].classList.remove("hidden")
-            divChild.childNodes[1].classList.add("inline-flex")
+            divChild.children[0].classList.remove("inline-flex")
+            divChild.children[0].classList.add("hidden")
+            divChild.children[1].classList.remove("hidden")
+            divChild.children[1].classList.add("inline-flex")
         }
     }
 }
