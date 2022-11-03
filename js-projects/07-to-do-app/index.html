@@ -4,23 +4,77 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/favicon.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="stylesheet" href="./todo.css" />
     <script src="./app.js"></script>
     <title>TODO App</title>
   </head>
-  <body>
-    <h1>TODO App</h1>
-    <div class="">
-      <div class="">
-        <form action="">
-          <input type="text" id="user-input-task-name" />
-          <input type="date" id="user-input-task-date" />
-          <input type="time" id="user-input-task-time" />
-          <button id="add-btn">Add</button>
+  <body class="text-red-600 bg-red-200">
+    <div class="p-4 flex flex-row">
+      <a href="../../index.html">
+        <img
+          src="../images/house-solid.svg"
+          alt="home"
+          class="w-6 h-6 mr-2 object-cover object-center cursor-pointer"
+        />
+      </a>
+      <a
+        href="https://github.com/Torjuman/javascript-mini-projects-iNeuron-fsjs2022/tree/main/js-projects/07-to-do-app"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="../images/github.svg"
+          alt="github"
+          class="w-6 h-6 ml-2 object-cover object-center cursor-pointer"
+        />
+      </a>
+    </div>
+    <h1 class="text-5xl font-medium text-center">
+      <span class="font-dancing-script text-red-400">TODO</span> App
+    </h1>
+    <div class="container mx-auto flex flex-col items-center justify-center">
+      <div class="bg-red-200 p-5 rounded shadow-red-34 mt-6 mb-2">
+        <form action="" class="flex flex-col">
+          <input
+            type="text"
+            id="user-input-task-name"
+            placeholder="Enter task title"
+            class="p-2 mt-2 mb-3 rounded shadow-red-4 cursor-pointer"
+          />
+          <input
+            type="date"
+            id="user-input-task-date"
+            placeholder="dd/mm/yyyy"
+            class="p-2 mt-2 mb-3 rounded shadow-red-4 cursor-pointer"
+          />
+          <input
+            type="time"
+            id="user-input-task-time"
+            placeholder="hh:mm:am"
+            class="p-2 mt-2 mb-3 rounded shadow-red-4 cursor-pointer"
+          />
+          <button
+            type="submit"
+            id="add-btn"
+            class="flex w-100px py-2 mt-5 font-medium bg-red-200 rounded-lg shadow-red-4 justify-center hover:start"
+          >
+            Add
+          </button>
         </form>
       </div>
-      <div class="">
-        <h1>Your Task</h1>
-        <div class="" id="show-task-list"></div>
+      <div
+        class="w-full flex flex-col bg-red-200 py-2 px-5 rounded shadow-red-4 mt-6 mb-2"
+      >
+        <h1
+          class="text-2xl pl-2 py-1 mt-2 mb-2 text-red-400 shadow-red-4 font-medium"
+        >
+          Your Task List
+        </h1>
+        <div class="w-full flex flex-col" id="show-task-list"></div>
       </div>
     </div>
   </body>
