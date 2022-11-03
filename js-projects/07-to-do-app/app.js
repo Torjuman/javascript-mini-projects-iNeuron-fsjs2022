@@ -34,12 +34,26 @@ function taskItem(parent, str, taskDate, taskTime) {
   let finishTimeText = document.createElement("p");
   let taskDateTime = document.createElement("p");
 
-  editBtn.innerText = "Edit";
-  removeBtn.innerText = "Remove";
-  title.innerText = `Task: ${str}`;
-  created.innerText = `created at: ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}`;
-  finishTimeText.innerText = `About to finish at :`;
-  taskDateTime.innerText = `${taskDate} ${taskTime}`;
+  divItem.classList =
+    "flex flex-row justify-space-between shadow-red-4 mt-2 mb-2";
+
+  // Add class & innerHTML to title
+  innerDivOne.classList = "flex flex-col flex-wrap p-2";
+  title.innerHTML = `<p class="p-1">Task : <span class="font-medium">${str}</span></p>`;
+  created.innerHTML = `<p class="p-1">${new Date().toLocaleDateString()}</p>`;
+
+  // Add class & innerHTML to Finish time
+  innerDivTwo.classList = "flex flex-col flex-wrap p-2";
+  finishTimeText.innerHTML = `<p class="p-1">About to Finish</p>`;
+  taskDateTime.innerHTML = `<p class="p-1">${taskDate} ${taskTime}</p>`;
+
+  // Add class & innerHTML to edit & remove button
+  innerDivThree.classList = `flex flex-row p-2`;
+  editBtn.classList = "inline-flex p-1 cursor-pointer";
+  removeBtn.classList = "inline-flex p-1 cursor-pointer";
+
+  editBtn.innerHTML = `<img src="./images/edit.svg" alt="Edit" class="w-5 object-center" />`;
+  removeBtn.innerHTML = `<img src="./images/trash-can-solid.svg" alt="Trash-can-solid" class="w-5 object-center" />`;
 
   editBtn.addEventListener("click", function () {
     let userInputTaskName = document.getElementById("user-input-task-name");
