@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@600&display=swap');
+
+.w-9\/10 {
+    width: 90%;
+}
+
+.font-lobster {
+    font-family: 'Lobster', 'cursive', sans-serif;
+}
+.font-montserrat {
+    font-family: 'Montserrat', 'cursive', sans-serif;
+}
+
+.text-purple-600 {
+    color: rgb(147 51 234);
+}
+
+/* Background colour */
+.bg-purple-200 {
+    background-color: rgb(233 213 255);
+}
+
+.shadow-purple-34 {
+    box-shadow: 0 0 34px -15px rgb(147 51 234);
+}
+
+.shadow {
+    box-shadow: 2px 2px 3px rgb(84, 85, 84);
+}
+
+.shadow:hover {
+    box-shadow: 2px 3px 8px rgb(84, 85, 84);
+}
+
+.gap-2 {
+    gap: 0.5rem;
+}
