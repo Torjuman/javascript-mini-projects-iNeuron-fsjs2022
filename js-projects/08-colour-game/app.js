@@ -21,6 +21,19 @@ window.onload = () => {
   let colourArrayLength = colourArray.length;
   let userScore = 0;
   let computerScore = 0;
+  let colourPalletDiv = document.getElementById("colour-pallet");
+
+  function colourPallet(colour) {
+    let inp = document.createElement("input");
+    inp.classList = "btn w-20 h-20 rounded shadow cursor-pointer";
+    inp.type = "button";
+    inp.style.backgroundColor = colour;
+    colourPalletDiv.appendChild(inp);
+  }
+
+  colourArray.forEach((item) => {
+    colourPallet(item);
+  });
 
   function pickColourByComputer() {
     return colourArray[Math.floor(Math.random() * colourArrayLength)];
