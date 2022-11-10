@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Game</title>
+  </head>
+  <body>
+    <h1>Typing Game</h1>
+    <div class="">
+      <p id="random-text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, adipisci.
+      </p>
+      <div class="">
+        <p>Correct words : <span id="correct-word"></span></p>
+        <p>Incorrect words : <span id="incorrect-word"></span></p>
+        <p>Untyped words : <span id="not-typed-word"></span></p>
+        <p>Total words : <span id="total-words"></span></p>
+      </div>
+      <div class="">
+        <textarea
+          id="typed-text-input"
+          cols="30"
+          rows="10"
+          placeholder="Click The Start Button First"
+          disabled
+        ></textarea>
+      </div>
+      <div class="">
+        <button id="start-btn">Start</button
+        ><button disabled id="stop-btn">Stop</button>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
