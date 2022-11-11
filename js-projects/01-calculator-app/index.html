@@ -1,84 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./calculator.png" type="image/x-icon">
-    <link rel="stylesheet" href="../css/base.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/responsive.css">
-    <link rel="stylesheet" href="./calculator.css"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./calculator.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="stylesheet" href="./calculator.css" />
     <title>Calculator App</title>
-</head>
-<body class="body-font bg-gray-200">
+  </head>
+  <body class="body-font bg-gray-200">
     <div class="p-4 flex flex-row">
-        <a href="../../index.html">
-            <img src="../images/house-solid.svg" alt="home" class="w-6 h-6 mr-2 cursor-pointer">
-        </a>
-        <a href="https://github.com/Torjuman/javascript-mini-projects-iNeuron-fsjs2022/tree/main/js-projects/01-calculator-app" target="_blank" rel="noopener noreferrer">
-            <img src="../images/github.svg" alt="github" class="w-6 h-6 ml-2 cursor-pointer">
-        </a>
+      <a href="../../index.html">
+        <img
+          src="../images/house-solid.svg"
+          alt="home"
+          class="w-6 h-6 mr-2 cursor-pointer"
+        />
+      </a>
+      <a
+        href="https://github.com/Torjuman/javascript-mini-projects-iNeuron-fsjs2022/tree/main/js-projects/01-calculator-app"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="../images/github.svg"
+          alt="github"
+          class="w-6 h-6 ml-2 cursor-pointer"
+        />
+      </a>
+      <a
+        href="https://www.linkedin.com/in/torjuman-rimon-a3a169176/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="../images/linkedin.svg"
+          alt="linkedin"
+          class="w-6 h-6 ml-2 cursor-pointer"
+        />
+      </a>
+      <a
+        href="https://www.instagram.com/rimontorjuman/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="../images/instagram.svg"
+          alt="instagram"
+          class="w-6 h-6 ml-2 cursor-pointer"
+        />
+      </a>
+      <a
+        href="https://hashnode.com/@torjuman"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="../images/hashnode.svg"
+          alt="hashnode"
+          class="w-6 h-6 ml-2 cursor-pointer"
+        />
+      </a>
     </div>
     <div class="container mx-auto mt-10 text-crimson-600">
-        <div class="flex flex-col items-center">
-            <div class="w-64 p-5 bg-white flex flex-col items-end border-2 border-solid border-gray-200 rounded-lg drop-shadow">
-                <div id="result-show" class="flex h-10 text-3xl font-medium"></div>
-            
-                <div id="num-show" class="flex h-10 text-2xl font-medium">0</div>
-            </div>
-            <div class="w-64 p-5 bg-white flex flex-col border-2 border-solid border-gray-200 rounded-lg drop-shadow">
-                <div class="flex flex-row">
-                    <input type="button" class="inline-flex w-1/4 py-5 px-2 text-lg hover:bg-crimson-600 hover:text-white"
-                        id="clear-all" value="AC">
-                    <input type="button" class="inline-flex w-1/4 py-5 px-2 text-lg hover:bg-crimson-600 hover:text-white"
-                        id="clear-one" value="C">
-                    <input type="button" class="inline-flex w-1/4 py-5 px-2 text-lg hover:bg-crimson-600 hover:text-white"
-                        id="divide" value="/">
-                    <input type="button" class="inline-flex w-1/4 py-5 px-2 text-lg hover:bg-crimson-600 hover:text-white"
-                        id="multiply" value="*">
-                </div>
-            
-                <div class="flex flex-row">
-                    <input type="button" class="inline-flex w-1/4 py-5 px-2 text-lg hover:bg-crimson-600 hover:text-white" id="one"
-                        value="1">
-                    <input type="button" class="inline-flex w-1/4 py-5 px-2 text-lg hover:bg-crimson-600 hover:text-white" id="two"
-                        value="2">
-                    <input type="button" class="inline-flex w-1/4 py-5 px-2 text-lg hover:bg-crimson-600 hover:text-white"
-                        id="three" value="3">
-                    <input type="button" class="inline-flex w-1/4 py-5 px-2 text-lg hover:bg-crimson-600 hover:text-white"
-                        id="minus" value="-">
-                </div>
-            
-                <div class="flex flex-row">
-                    <input type="button" class="inline-flex w-1/4 py-5 px-2 text-lg hover:bg-crimson-600 hover:text-white" id="four"
-                        value="4">
-                    <input type="button" class="inline-flex w-1/4 py-5 px-2 text-lg hover:bg-crimson-600 hover:text-white" id="five"
-                        value="5">
-                    <input type="button" class="inline-flex w-1/4 py-5 px-2 text-lg hover:bg-crimson-600 hover:text-white" id="six"
-                        value="6">
-                    <input type="button" class="inline-flex w-1/4 py-5 px-2 text-lg hover:bg-crimson-600 hover:text-white" id="plus"
-                        value="+">
-                </div>
-            
-                <div class="flex flex-row">
-                    <input type="button" class="inline-flex w-1/4 py-5 px-2 text-lg hover:bg-crimson-600 hover:text-white"
-                        id="seven" value="7">
-                    <input type="button" class="inline-flex w-1/4 py-5 px-2 text-lg hover:bg-crimson-600 hover:text-white"
-                        id="eight" value="8">
-                    <input type="button" class="inline-flex w-1/4 py-5 px-2 text-lg hover:bg-crimson-600 hover:text-white" id="nine"
-                        value="9">
-                    <input type="button" class="inline-flex w-1/4 py-5 px-2 text-lg hover:bg-crimson-600 hover:text-white"
-                        id="equal" value="=">
-                </div>
-            
-                <div class="flex flex-row">
-                    <input type="button" class="inline-flex w-1/4 py-5 px-2 text-lg hover:bg-crimson-600 hover:text-white" id="zero"
-                        value="0">
-                </div>
-            </div>
+      <div class="flex flex-col items-center">
+        <div
+          class="w-64 p-5 bg-white flex flex-col items-end border-2 border-solid border-gray-200 rounded-lg drop-shadow"
+        >
+          <div id="result-show" class="flex h-10 text-3xl font-medium"></div>
+
+          <div id="num-show" class="flex h-10 text-2xl font-medium">0</div>
         </div>
+        <div
+          class="w-64 p-5 bg-white flex flex-col border-2 border-solid border-gray-200 rounded-lg drop-shadow"
+        >
+          <div class="flex flex-row">
+            <input
+              type="button"
+              class="inline-flex w-1/4 py-5 px-2 text-lg hover:bg-crimson-600 hover:text-white"
+              id="clear-all"
+              value="AC"
+            />
+            <input
+              type="button"
+              class="inline-flex w-1/4 py-5 px-2 text-lg hover:bg-crimson-600 hover:text-white"
+              id="clear-one"
+              value="C"
+            />
+            <input
+              type="button"
+              class="inline-flex w-1/4 py-5 px-2 text-lg hover:bg-crimson-600 hover:text-white"
+              id="divide"
+              value="/"
+            />
+            <input
+              type="button"
+              class="inline-flex w-1/4 py-5 px-2 text-lg hover:bg-crimson-600 hover:text-white"
+              id="multiply"
+              value="*"
+            />
+          </div>
+
+          <div class="flex flex-row">
+            <input
+              type="button"
+              class="inline-flex w-1/4 py-5 px-2 text-lg hover:bg-crimson-600 hover:text-white"
+              id="one"
+              value="1"
+            />
+            <input
+              type="button"
+              class="inline-flex w-1/4 py-5 px-2 text-lg hover:bg-crimson-600 hover:text-white"
+              id="two"
+              value="2"
+            />
+            <input
+              type="button"
+              class="inline-flex w-1/4 py-5 px-2 text-lg hover:bg-crimson-600 hover:text-white"
+              id="three"
+              value="3"
+            />
+            <input
+              type="button"
+              class="inline-flex w-1/4 py-5 px-2 text-lg hover:bg-crimson-600 hover:text-white"
+              id="minus"
+              value="-"
+            />
+          </div>
+
+          <div class="flex flex-row">
+            <input
+              type="button"
+              class="inline-flex w-1/4 py-5 px-2 text-lg hover:bg-crimson-600 hover:text-white"
+              id="four"
+              value="4"
+            />
+            <input
+              type="button"
+              class="inline-flex w-1/4 py-5 px-2 text-lg hover:bg-crimson-600 hover:text-white"
+              id="five"
+              value="5"
+            />
+            <input
+              type="button"
+              class="inline-flex w-1/4 py-5 px-2 text-lg hover:bg-crimson-600 hover:text-white"
+              id="six"
+              value="6"
+            />
+            <input
+              type="button"
+              class="inline-flex w-1/4 py-5 px-2 text-lg hover:bg-crimson-600 hover:text-white"
+              id="plus"
+              value="+"
+            />
+          </div>
+
+          <div class="flex flex-row">
+            <input
+              type="button"
+              class="inline-flex w-1/4 py-5 px-2 text-lg hover:bg-crimson-600 hover:text-white"
+              id="seven"
+              value="7"
+            />
+            <input
+              type="button"
+              class="inline-flex w-1/4 py-5 px-2 text-lg hover:bg-crimson-600 hover:text-white"
+              id="eight"
+              value="8"
+            />
+            <input
+              type="button"
+              class="inline-flex w-1/4 py-5 px-2 text-lg hover:bg-crimson-600 hover:text-white"
+              id="nine"
+              value="9"
+            />
+            <input
+              type="button"
+              class="inline-flex w-1/4 py-5 px-2 text-lg hover:bg-crimson-600 hover:text-white"
+              id="equal"
+              value="="
+            />
+          </div>
+
+          <div class="flex flex-row">
+            <input
+              type="button"
+              class="inline-flex w-1/4 py-5 px-2 text-lg hover:bg-crimson-600 hover:text-white"
+              id="zero"
+              value="0"
+            />
+          </div>
+        </div>
+      </div>
     </div>
     <script src="./app.js"></script>
-</body>
+  </body>
 </html>
