@@ -9,23 +9,25 @@
   <body>
     <h1>Typing Game</h1>
     <div class="">
-      <p id="random-text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, adipisci.
-      </p>
       <div class="">
-        <p>Correct words : <span id="correct-word"></span></p>
-        <p>Incorrect words : <span id="incorrect-word"></span></p>
-        <p>Untyped words : <span id="not-typed-word"></span></p>
-        <p>Total words : <span id="total-words"></span></p>
+        <p>Write the below text in input box and see your typing speed.</p>
+        <p id="random-text"></p>
+        <button id="refresh">Refresh</button>
       </div>
       <div class="">
-        <textarea
+        <p>Word per minute : <span id="word-per-minute">0</span></p>
+        <p>Correct words : <span id="correct-word">0</span></p>
+        <p>Incorrect words : <span id="incorrect-word">0</span></p>
+        <p>Untyped words : <span id="not-typed-word">0</span></p>
+        <p>Total words : <span id="total-words">0</span></p>
+      </div>
+      <div class="">
+        <input
           id="typed-text-input"
-          cols="30"
-          rows="10"
           placeholder="Click The Start Button First"
           disabled
-        ></textarea>
+          value=""
+        />
       </div>
       <div class="">
         <button id="start-btn">Start</button
