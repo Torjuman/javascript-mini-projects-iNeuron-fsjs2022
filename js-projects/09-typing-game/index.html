@@ -4,34 +4,122 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/favicon.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="stylesheet" href="./typingGame.css" />
     <title>Typing Game</title>
   </head>
-  <body>
-    <h1>Typing Game</h1>
-    <div class="">
-      <div class="">
-        <p>Write the below text in input box and see your typing speed.</p>
-        <p id="random-text"></p>
-        <button id="refresh">Refresh</button>
-      </div>
-      <div class="">
-        <p>Word per minute : <span id="word-per-minute">0</span></p>
-        <p>Correct words : <span id="correct-word">0</span></p>
-        <p>Incorrect words : <span id="incorrect-word">0</span></p>
-        <p>Untyped words : <span id="not-typed-word">0</span></p>
-        <p>Total words : <span id="total-words">0</span></p>
-      </div>
-      <div class="">
-        <input
-          id="typed-text-input"
-          placeholder="Click The Start Button First"
-          disabled
-          value=""
+  <body class="text-sky-600 bg-sky-200">
+    <div class="p-4 flex flex-row">
+      <a href="../../index.html">
+        <img
+          src="../images/house-solid.svg"
+          alt="home"
+          class="w-6 h-6 mr-2 cursor-pointer"
         />
+      </a>
+      <a
+        href="https://github.com/Torjuman/javascript-mini-projects-iNeuron-fsjs2022/tree/main/js-projects/09-typing-game"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="../images/github.svg"
+          alt="github"
+          class="w-6 h-6 ml-2 cursor-pointer"
+        />
+      </a>
+      <a
+        href="https://www.linkedin.com/in/torjuman-rimon-a3a169176/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="../images/linkedin.svg"
+          alt="linkedin"
+          class="w-6 h-6 ml-2 cursor-pointer"
+        />
+      </a>
+      <a
+        href="https://www.instagram.com/rimontorjuman/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="../images/instagram.svg"
+          alt="instagram"
+          class="w-6 h-6 ml-2 cursor-pointer"
+        />
+      </a>
+      <a
+        href="https://hashnode.com/@torjuman"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="../images/hashnode.svg"
+          alt="hashnode"
+          class="w-6 h-6 ml-2 cursor-pointer"
+        />
+      </a>
+    </div>
+    <h1 class="text-5xl font-medium text-center font-lobster">Typing Game</h1>
+    <div class="container mx-auto flex flex-col items-center justify-center">
+      <div class="bg-sky-200 p-5 rounded shadow-sky-34 mt-6 mb-2">
+        <div class="flex flex-row flex-wrap text-fuchsia-600">
+          <p class="w-1/2 lg:w-1/5 py-2">
+            Word per minute : <span id="word-per-minute">0</span>
+          </p>
+          <p class="w-1/2 lg:w-1/5 py-2">
+            Correct words : <span id="correct-word">0</span>
+          </p>
+          <p class="w-1/2 lg:w-1/5 py-2">
+            Incorrect words : <span id="incorrect-word">0</span>
+          </p>
+          <p class="w-1/2 lg:w-1/5 py-2">
+            Untyped words : <span id="not-typed-word">0</span>
+          </p>
+          <p class="w-1/2 lg:w-1/5 py-2">
+            Total words : <span id="total-words">0</span>
+          </p>
+        </div>
+        <p class="text-center text-xl font-medium font-montserrat mb-3">
+          Write the below text in input box and see your typing speed.
+        </p>
+        <p id="random-text"></p>
+        <button
+          id="refresh"
+          class="inline-flex w-100px py-2 mt-3 font-medium bg-sky-200 rounded-lg shadow-sky-4 justify-center hover:start"
+        >
+          Refresh
+        </button>
       </div>
-      <div class="">
-        <button id="start-btn">Start</button
-        ><button disabled id="stop-btn">Stop</button>
+      <div class="bg-sky-200 p-5 rounded shadow-sky-34 mt-6 mb-2">
+        <div class="">
+          <input
+            id="typed-text-input"
+            placeholder="Click The Start Button First"
+            disabled
+            value=""
+            class="w-v-90 h-300px mb-3 disable bg-gray-500 text-white rounded text-center"
+          />
+        </div>
+        <div class="flex flex-row mt-3">
+          <button
+            id="start-btn"
+            class="inline-flex disable w-100px mr-2 py-2 font-medium bg-sky-200 rounded-lg shadow-sky-4 justify-center hover:start"
+          >
+            Start</button
+          ><button
+            disabled
+            id="stop-btn"
+            class="inline-flex disable w-100px ml-2 py-2 font-medium bg-sky-200 rounded-lg shadow-sky-4 justify-center hover:stop"
+          >
+            Stop
+          </button>
+        </div>
       </div>
     </div>
     <script src="./app.js"></script>

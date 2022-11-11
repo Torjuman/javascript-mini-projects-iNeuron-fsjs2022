@@ -1,0 +1,50 @@
+.w-v-90 {
+    width: 90vw;
+}
+
+.h-300px {
+    height: 300px;
+}
+
+.w-100px {
+    width: 100px;
+}
+
+.text-sky-600 {
+    color: rgb(2 132 199);
+}
+
+.text-fuchsia-600 {
+    color: rgb(192 38 211);
+}
+
+/* Background colour */
+.bg-sky-200 {
+    background-color: rgb(186 230 253);
+}
+
+.bg-gray-500 {
+    background-color: rgb(107 114 128);
+}
+
+.shadow-sky-34 {
+    box-shadow: 0 0 34px -15px rgb(2 132 199);
+}
+
+.shadow-sky-4 {
+    box-shadow: 0 0 4px rgb(56 189 248);
+}
+
+.hover\:start:hover {
+    box-shadow: 0 0 4px rgb(22 163 74);
+    color: rgb(22 163 74);
+}
+
+.hover\:stop:hover {
+    box-shadow: 0 0 4px rgb(255 51 67);
+    color: rgb(255 51 67);
+}
+
+.disable:disabled {
+    opacity: 0.60;
+}
