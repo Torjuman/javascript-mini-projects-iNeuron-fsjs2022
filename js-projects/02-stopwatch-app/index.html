@@ -1,38 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="../css/base.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/responsive.css">
-    <link rel="stylesheet" href="./stopwatch.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="stylesheet" href="./stopwatch.css" />
     <title>Stopwatch App</title>
-</head>
-<body class="text-gray-600 bg-orange-200">
+  </head>
+  <body class="text-gray-600 bg-orange-200">
     <div class="p-4 flex flex-row">
-        <a href="../../index.html">
-            <img src="../images/house-solid.svg" alt="home" class="w-6 h-6 mr-2 cursor-pointer">
-        </a>
-        <a href="https://github.com/Torjuman/javascript-mini-projects-iNeuron-fsjs2022/tree/main/js-projects/02-stopwatch-app"
-            target="_blank" rel="noopener noreferrer">
-            <img src="../images/github.svg" alt="github" class="w-6 h-6 ml-2 cursor-pointer">
-        </a>
+      <a href="../../index.html">
+        <img
+          src="../images/house-solid.svg"
+          alt="home"
+          class="w-6 h-6 mr-2 cursor-pointer"
+        />
+      </a>
+      <a
+        href="https://github.com/Torjuman/javascript-mini-projects-iNeuron-fsjs2022/tree/main/js-projects/02-stopwatch-app"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="../images/github.svg"
+          alt="github"
+          class="w-6 h-6 ml-2 cursor-pointer"
+        />
+      </a>
+      <a
+        href="https://www.linkedin.com/in/torjuman-rimon-a3a169176/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="../images/linkedin.svg"
+          alt="linkedin"
+          class="w-6 h-6 ml-2 cursor-pointer"
+        />
+      </a>
+      <a
+        href="https://www.instagram.com/rimontorjuman/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="../images/instagram.svg"
+          alt="instagram"
+          class="w-6 h-6 ml-2 cursor-pointer"
+        />
+      </a>
+      <a
+        href="https://hashnode.com/@torjuman"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="../images/hashnode.svg"
+          alt="hashnode"
+          class="w-6 h-6 ml-2 cursor-pointer"
+        />
+      </a>
     </div>
-    <div class="container mx-auto h-v-full flex flex-col items-center justify-center">
-        <div class="bg-orange-200 hover:watch tracking-widest cursor-pointer flex justify-center items-center w-200px h-200px text-5xl rounded-full shadow-orange-34">
-            <span id="hours">00</span> :
-            <span id="minutes">00</span> :
-            <span id="seconds">00</span>
-        </div>
-        <div class="flex flex-row gap-4 mt-5">
-            <button class="inline-flex w-100px py-2 font-medium bg-orange-200 rounded-lg shadow-orange-4 justify-center hover:start" id="start">Start</button>
-            <button class="inline-flex w-100px py-2 font-medium bg-orange-200 rounded-lg shadow-orange-4 justify-center hover:stop" id="stop">Stop</button>
-            <button class="inline-flex w-100px py-2 font-medium bg-orange-200 rounded-lg shadow-orange-4 justify-center hover:reset" id="reset">Reset</button>
-        </div>
+    <div
+      class="container mx-auto h-v-full flex flex-col items-center justify-center"
+    >
+      <div
+        class="bg-orange-200 hover:watch tracking-widest cursor-pointer flex justify-center items-center w-200px h-200px text-5xl rounded-full shadow-orange-34"
+      >
+        <span id="hours">00</span> : <span id="minutes">00</span> :
+        <span id="seconds">00</span>
+      </div>
+      <div class="flex flex-row gap-4 mt-5">
+        <button
+          class="inline-flex w-100px py-2 font-medium bg-orange-200 rounded-lg shadow-orange-4 justify-center hover:start"
+          id="start"
+        >
+          Start
+        </button>
+        <button
+          class="inline-flex w-100px py-2 font-medium bg-orange-200 rounded-lg shadow-orange-4 justify-center hover:stop"
+          id="stop"
+        >
+          Stop
+        </button>
+        <button
+          class="inline-flex w-100px py-2 font-medium bg-orange-200 rounded-lg shadow-orange-4 justify-center hover:reset"
+          id="reset"
+        >
+          Reset
+        </button>
+      </div>
     </div>
     <script src="./app.js"></script>
-</body>
+  </body>
 </html>
