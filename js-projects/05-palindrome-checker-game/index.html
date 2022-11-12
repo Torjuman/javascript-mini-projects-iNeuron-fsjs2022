@@ -1,45 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./images/favicon.svg" type="image/x-icon">
-    <link rel="stylesheet" href="../css/base.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/responsive.css">
-    <link rel="stylesheet" href="./palidrome.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/favicon.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="stylesheet" href="./palidrome.css" />
     <title>Palindrome Checker Game</title>
-</head>
-<body class="text-rose-600 bg-rose-200">
+  </head>
+  <body class="text-rose-600 bg-rose-200">
     <div class="p-4 flex flex-row">
-        <a href="../../index.html">
-            <img src="../images/house-solid.svg" alt="home" class="w-6 h-6 mr-2 cursor-pointer">
-        </a>
-        <a href="https://github.com/Torjuman/javascript-mini-projects-iNeuron-fsjs2022/tree/main/js-projects/05-palindrome-checker-game"
-            target="_blank" rel="noopener noreferrer">
-            <img src="../images/github.svg" alt="github" class="w-6 h-6 ml-2 cursor-pointer">
-        </a>
+      <a href="../../index.html">
+        <img
+          src="../images/house-solid.svg"
+          alt="home"
+          class="w-6 h-6 mr-2 cursor-pointer"
+        />
+      </a>
+      <a
+        href="https://github.com/Torjuman/javascript-mini-projects-iNeuron-fsjs2022/tree/main/js-projects/05-palindrome-checker-game"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="../images/github.svg"
+          alt="github"
+          class="w-6 h-6 ml-2 cursor-pointer"
+        />
+      </a>
+      <a
+        href="https://www.linkedin.com/in/torjuman-rimon-a3a169176/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="../images/linkedin.svg"
+          alt="linkedin"
+          class="w-6 h-6 ml-2 cursor-pointer"
+        />
+      </a>
+      <a
+        href="https://www.instagram.com/rimontorjuman/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="../images/instagram.svg"
+          alt="instagram"
+          class="w-6 h-6 ml-2 cursor-pointer"
+        />
+      </a>
+      <a
+        href="https://hashnode.com/@torjuman"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="../images/hashnode.svg"
+          alt="hashnode"
+          class="w-6 h-6 ml-2 cursor-pointer"
+        />
+      </a>
     </div>
     <h1 class="text-5xl font-medium text-center">Palindrome Checker Game</h1>
-    <div class="container mx-auto h-v-60 flex flex-col items-center justify-center">
-        <div class="bg-rose-200 max-w-320px rounded shadow-rose-34">
-
-            <p class="text-base p-4">A palindrome is a word, number, phrase, or other sequence of symbols that reads the same
-                backwards as forwards, such as the words "madam" or "racecar".</p>
-            <div class="flex flex-col items-center">
-                <input class="p-2 rounded shadow-rose-4" type="text" id="input-words" value="" placeholder="Enter Text or Number">
-                <button
-                    class="flex w-100px py-2 mt-5 font-medium bg-rose-200 rounded-lg shadow-rose-4 justify-center hover:stop"
-                    id="checker-btn">
-                    Check
-                </button>
-            </div>
-            <p class="text-base text-center mt-5 mb-5"><span id="result-one"></span> 
-                <span class="text-blue-600" id="result-value"></span><span id="result-two"></span>
-            </p>
+    <div
+      class="container mx-auto h-v-60 flex flex-col items-center justify-center"
+    >
+      <div class="bg-rose-200 max-w-320px rounded shadow-rose-34">
+        <p class="text-base p-4">
+          A palindrome is a word, number, phrase, or other sequence of symbols
+          that reads the same backwards as forwards, such as the words "madam"
+          or "racecar".
+        </p>
+        <div class="flex flex-col items-center">
+          <input
+            class="p-2 rounded shadow-rose-4"
+            type="text"
+            id="input-words"
+            value=""
+            placeholder="Enter Text or Number"
+          />
+          <button
+            class="flex w-100px py-2 mt-5 font-medium bg-rose-200 rounded-lg shadow-rose-4 justify-center hover:stop"
+            id="checker-btn"
+          >
+            Check
+          </button>
         </div>
+        <p class="text-base text-center mt-5 mb-5">
+          <span id="result-one"></span>
+          <span class="text-blue-600" id="result-value"></span
+          ><span id="result-two"></span>
+        </p>
+      </div>
     </div>
     <script src="./app.js"></script>
-</body>
+  </body>
 </html>
