@@ -1,4 +1,4 @@
-# TODO Form Validation
+# Colour Game
 
 It's a colour predicting game in which I have to predict the colours resulting from the combination of primary colours. This is build on Vanilla JavaScript.
 
