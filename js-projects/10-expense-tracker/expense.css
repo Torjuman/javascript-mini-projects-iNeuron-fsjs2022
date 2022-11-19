@@ -1,0 +1,25 @@
+.w-v-80 {
+    width: 80vw;
+}
+
+.text-lime-600 {
+    color: rgb(101 163 13);
+}
+
+/* Background colour */
+.bg-lime-200 {
+    background-color: rgb(217 249 157);
+}
+
+.bg-lime-600 {
+    background-color: rgb(101 163 13);
+}
+
+.shadow-lime-4 {
+    box-shadow: 0 0 4px rgb(101 163 13);
+}
+
+.hover\:stop:hover {
+    box-shadow: 0 0 4px rgb(255 51 67);
+    color: rgb(255 51 67);
+}

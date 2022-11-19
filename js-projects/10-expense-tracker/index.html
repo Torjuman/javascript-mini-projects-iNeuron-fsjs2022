@@ -4,32 +4,112 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/favicon.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="stylesheet" href="./expense.css" />
     <title>Expense Tracker</title>
   </head>
-  <body>
-    <h1>Expense Tracker</h1>
-    <div class="">
-      <div class="">
-        <h1>Your Balance</h1>
-        <p><span id="balance-result">00</span></p>
+  <body class="text-lime-600 bg-lime-200">
+    <div class="p-4 flex flex-row">
+      <a href="../../index.html">
+        <img
+          src="../images/house-solid.svg"
+          alt="home"
+          class="w-6 h-6 mr-2 cursor-pointer"
+        />
+      </a>
+      <a
+        href="https://github.com/Torjuman/javascript-mini-projects-iNeuron-fsjs2022/tree/main/js-projects/10-expense-tracker"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="../images/github.svg"
+          alt="github"
+          class="w-6 h-6 ml-2 cursor-pointer"
+        />
+      </a>
+      <a
+        href="https://www.linkedin.com/in/torjuman-rimon-a3a169176/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="../images/linkedin.svg"
+          alt="linkedin"
+          class="w-6 h-6 ml-2 cursor-pointer"
+        />
+      </a>
+      <a
+        href="https://www.instagram.com/rimontorjuman/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="../images/instagram.svg"
+          alt="instagram"
+          class="w-6 h-6 ml-2 cursor-pointer"
+        />
+      </a>
+      <a
+        href="https://hashnode.com/@torjuman"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="../images/hashnode.svg"
+          alt="hashnode"
+          class="w-6 h-6 ml-2 cursor-pointer"
+        />
+      </a>
+    </div>
+    <h1 class="text-5xl font-medium text-center font-lobster">
+      Expense Tracker
+    </h1>
+    <div class="container mx-auto flex flex-col items-center justify-center">
+      <div class="bg-lime-200 p-5 rounded shadow-lime-4 mt-6 mb-2">
+        <h1 class="text-2xl font-medium text-center font-lobster">
+          Your Balance
+        </h1>
+        <p class="text-2xl font-medium text-center font-lobster">
+          <span id="balance-result">00</span>
+        </p>
       </div>
-      <div class="">
+      <div
+        class="bg-lime-200 flex flex-col p-5 rounded shadow-lime-4 mt-6 mb-2"
+      >
         <input
           type="text"
           placeholder="Enter income or expense title"
           value=""
           id="title-input"
+          class="w-v-80 inline-flex p-3 mb-3 rounded"
         />
         <input
           type="number"
           placeholder="Enter amount"
           value=""
           id="amount-input"
+          class="w-v-80 inline-flex p-3 mb-3 rounded"
         />
-        <button id="income-add-btn">Add as Income</button>
-        <button id="expense-add-btn">Add as Expense</button>
+        <div class="">
+          <button
+            id="income-add-btn"
+            class="mr-2 p-3 font-medium bg-lime-200 rounded-lg shadow-lime-4 justify-center hover:stop"
+          >
+            Add as Income
+          </button>
+          <button
+            id="expense-add-btn"
+            class="ml-2 p-3 font-medium bg-lime-200 rounded-lg shadow-lime-4 justify-center hover:stop"
+          >
+            Add as Expense
+          </button>
+        </div>
       </div>
-      <div class="" id="result-show"></div>
+      <div class="w-v-80 flex flex-col py-5" id="result-show"></div>
     </div>
     <script src="./app.js"></script>
   </body>

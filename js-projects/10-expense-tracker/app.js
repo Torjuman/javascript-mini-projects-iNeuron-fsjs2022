@@ -43,19 +43,30 @@ function main() {
   function listOfDiv(idText, title, amount) {
     let divPrimery = document.createElement("div");
     let divSecondery = document.createElement("div");
+    let divPar = document.createElement("div");
     let titleP = document.createElement("p");
     let amountP = document.createElement("p");
 
+    divPrimery.classList =
+      "w-full mt-2 mb-2 flex flex-row bg-lime-200 rounded shadow-lime-4";
+    titleP.classList = "text-xl ml-2 p-1";
+    amountP.classList = "inline-flex text-xl mr-2 p-1";
+    divSecondery.classList = "w-4";
+    divPar.classList = "w-full flex flex-row justify-space-between";
+
     titleP.innerText = title;
     if (idText == "Add as Income") {
-      amountP.innerText = `+${amount}`;
-      divSecondery.innerText = "+";
+      divSecondery.classList.add("bg-lime-600");
+      divPar.classList.add("text-lime-600");
+      amountP.innerHTML = `+ ${amount} <img src="./images/arrow-trend-up-solid.svg" alt="arrow-trend-up-solid" class="w-6 h-6 ml-2" />`;
     } else if (idText == "Add as Expense") {
-      amountP.innerText = `-${amount}`;
-      divSecondery.innerText = "-";
+      divSecondery.classList.add("bg-crimson-600");
+      divPar.classList.add("text-tomato-600");
+      amountP.innerHTML = `- ${amount} <img src="./images/arrow-trend-down-solid.svg" alt="arrow-trend-down-solid" class="w-6 h-6 ml-2" />`;
     }
 
-    divPrimery.append(divSecondery, titleP, amountP);
+    divPar.append(titleP, amountP);
+    divPrimery.append(divSecondery, divPar);
     document.getElementById("result-show").appendChild(divPrimery);
   }
 
@@ -63,8 +74,6 @@ function main() {
   function negBalanceCheck() {
     if (balanceResult < 0) {
       balanceResultShow.style.color = "rgb(255, 0, 0)";
-    } else {
-      balanceResultShow.style.color = "rgb(0, 255, 0)";
     }
   }
 }
