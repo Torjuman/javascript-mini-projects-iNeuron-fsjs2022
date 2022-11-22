@@ -1,0 +1,49 @@
+.w-150px {
+    width: 150px;
+}
+
+.text-blue-600 {
+    color: rgb(37 99 235);
+}
+
+.text-emerald-400 {
+    color: rgb(52 211 153);
+}
+
+.text-orange-400 {
+    color: rgb(251 146 60);
+}
+
+/* Background colour */
+.bg-blue-200 {
+    background-color: rgb(191 219 254);
+}
+
+.bg-emerald-400 {
+    background-color: rgb(52 211 153);
+}
+
+.bg-orange-400 {
+    background-color: rgb(251 146 60);
+}
+
+.shadow-blue-4 {
+    box-shadow: 0 0 4px rgb(37 99 235);
+}
+
+.hover\:stop:hover {
+    box-shadow: 0 0 4px rgb(255 51 67);
+    color: rgb(255 51 67);
+}
+
+.gap-2 {
+    gap: 0.5rem;
+}
+
+.opacity-0 {
+    opacity: 0;
+}
+
+.opacity-1 {
+    opacity: 1;
+}

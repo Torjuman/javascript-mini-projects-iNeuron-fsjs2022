@@ -4,16 +4,97 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/favicon.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="stylesheet" href="./cardGame.css" />
     <title>Memory Card Game</title>
   </head>
-  <body>
-    <h1>Memory Card Game</h1>
-    <div class="">
-      <div class="">
-        <p>Win Counter: <span id="win-counter-span">00</span></p>
-        <p>Loose Counter: <span id="loose-counter-span">00</span></p>
+  <body class="text-blue-600 bg-blue-200">
+    <div class="p-4 flex flex-row">
+      <a href="../../index.html">
+        <img
+          src="../images/house-solid.svg"
+          alt="home"
+          class="w-6 h-6 mr-2 cursor-pointer"
+        />
+      </a>
+      <a
+        href="https://github.com/Torjuman/javascript-mini-projects-iNeuron-fsjs2022/tree/main/js-projects/11-memory-card-game"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="../images/github.svg"
+          alt="github"
+          class="w-6 h-6 ml-2 cursor-pointer"
+        />
+      </a>
+      <a
+        href="https://www.linkedin.com/in/torjuman-rimon-a3a169176/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="../images/linkedin.svg"
+          alt="linkedin"
+          class="w-6 h-6 ml-2 cursor-pointer"
+        />
+      </a>
+      <a
+        href="https://www.instagram.com/rimontorjuman/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="../images/instagram.svg"
+          alt="instagram"
+          class="w-6 h-6 ml-2 cursor-pointer"
+        />
+      </a>
+      <a
+        href="https://hashnode.com/@torjuman"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="../images/hashnode.svg"
+          alt="hashnode"
+          class="w-6 h-6 ml-2 cursor-pointer"
+        />
+      </a>
+    </div>
+    <h1 class="text-5xl font-medium text-center">Memory Card Game</h1>
+    <div
+      class="container mx-auto mt-2 flex flex-col items-center justify-center"
+    >
+      <div
+        class="w-full p-4 mt-2 flex flex-row justify-space-between bg-blue-200 rounded shadow-blue-4"
+      >
+        <p class="font-medium text-xl">
+          Win Counter:
+          <span id="win-counter-span" class="text-emerald-400">00</span>
+        </p>
+        <p class="font-medium text-xl">
+          Loose Counter:
+          <span id="loose-counter-span" class="text-orange-400">00</span>
+        </p>
       </div>
-      <div class="" id="card-div"></div>
+      <div
+        class="w-full p-4 mt-4 flex flex-row justify-center flex-wrap gap-2 bg-blue-200 rounded shadow-blue-4"
+        id="card-div"
+      ></div>
+      <p class="text-emerald-400 mb-3 mt-3">
+        All pictures are collected from
+        <a
+          href="https://www.pexels.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-blue-600 font-medium"
+          >pexels</a
+        >
+      </p>
     </div>
     <script src="./app.js"></script>
   </body>
